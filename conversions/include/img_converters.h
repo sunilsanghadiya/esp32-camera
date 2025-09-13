@@ -22,7 +22,7 @@ extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 #include "esp_camera.h"
-#include "jpeg_decoder.h"
+// #include "jpeg_decoder.h"
 
 typedef size_t (* jpg_out_cb)(void * arg, size_t index, const void* data, size_t len);
 
@@ -127,7 +127,7 @@ bool fmt2rgb888(const uint8_t *src_buf, size_t src_len, pixformat_t format, uint
 #define JPG_SCALE_4X   JPEG_IMAGE_SCALE_1_4
 #define JPG_SCALE_8X   JPEG_IMAGE_SCALE_1_8
 #define JPG_SCALE_MAX  JPEG_IMAGE_SCALE_1_8
-bool jpg2rgb565(const uint8_t *src, size_t src_len, uint8_t * out, esp_jpeg_image_scale_t scale);
+// bool jpg2rgb565(const uint8_t *src, size_t src_len, uint8_t * out, esp_jpeg_image_scale_t scale);
 
 #ifdef __cplusplus
 }

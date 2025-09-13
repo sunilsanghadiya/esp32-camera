@@ -19,7 +19,8 @@
 #include "esp_heap_caps.h"
 #include "yuv.h"
 #include "sdkconfig.h"
-#include "jpeg_decoder.h"
+// #include "jpeg_decoder.h"
+#include "esp_camera"
 
 #include "esp_system.h"
 
